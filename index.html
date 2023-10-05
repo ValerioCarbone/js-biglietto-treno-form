@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Biglietto Treno</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <main>
-        <div>
-            <label for="km">Inserisci i km che vuoi percorrere</label>
-            <input type="text" name="km" placeholder="Kilometri" id="km">
-            <label for="age">Inserisci la tua età</label>
-            <select name="age" id="age" >
-                <option  value="0">0-17</option>
-                <option  value="1">18-64</option>
-                <option  value="2">65+</option>
-            </select>
-            <input class="btn-clc" type="submit">
-        </div>   
+    <main class="app">
+
+        <!-- FORM UTENTE -->
+
+        <section class="user-data-ins">
+            <div class="container">
+                <h1 class="section-title">Inserisci i tuoi dati</h1>
+                <div class="user-data-form">
+                    <div class="card-container">
+                        <div class="form-card">
+                            <label class="form-card-title" for="name-surname">Nome e Cognome</label>
+                            <input type="text" id="name-surname">
+                        </div>
+                        <div class="form-card">
+                            <label class="form-card-title" for="km">Km che vuoi percorrere</label>
+                            <input type="text" name="km" id="km">
+                        </div>
+                        <div class="form-card">
+                            <label class="form-card-title" for="age">Fascia d'età</label>
+                        <select name="age" id="age">
+                            <option value="0">0-17</option>
+                            <option value="1">18-64</option>
+                            <option value="2">65+</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="form-btn">
+                        <button class="btn btn-clc">Genera</button>
+                        <button class="btn">Annulla</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="./js/app.js"></script>
 </body>
+
 </html>

@@ -14,11 +14,11 @@
         
 
 // - In base ai km e alla sua età calcolare il prezzo finale del biglietto applicando lo sconto, se dovuto
-//      - Inizializzare una variabile che sarà la moltiplicazione dei km che l'utente vuole      percorrere per il costo per km
+//      - Inizializzare una variabile che sarà la moltiplicazione dei km che l'utente vuole  percorrere per il costo per km
         let ticketPrice = userKm * 0.21;
 
 //      - Applicare, se dovuto, lo sconto
-//      - Formattare il perzzo finale in una cifra con max 2 decimali              
+//      - Formattare il prezzo finale in una cifra con max 2 decimali              
 //      - Stampare in console il risultato quando l'utente cliccherà il bottone
         const btn = document.querySelector('.btn-clc')
         btn.addEventListener('click', function() {
