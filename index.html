@@ -17,27 +17,79 @@
             <div class="container">
                 <h1 class="section-title">Calcola il prezzo del tuo biglietto</h1>
                 <div class="user-data-form">
-                    <div class="card-container">
-                        <div class="form-card">
-                            <label class="form-card-title" for="name-surname">Nome e Cognome</label>
-                            <input class="card-input" type="text" id="name-surname">
-                        </div>
-                        <div class="form-card">
-                            <label class="form-card-title" for="km">Km che vuoi percorrere</label>
-                            <input class="card-input" type="text" name="km" id="km">
-                        </div>
-                        <div class="form-card">
-                            <label class="form-card-title" for="age">Fascia d'età</label>
-                        <select class="card-input" name="age" id="age">
-                            <option value="0">0-17</option>
-                            <option value="1">18-64</option>
-                            <option value="2">65+</option>
-                        </select>
+                    <div>
+                        <div class="row justify-content-center">
+                            <div class="form-card col-4">
+                                <label class="form-card-title" for="name-surname">Nome e Cognome</label>
+                                <input class="card-input" type="text" id="name-surname">
+                            </div>
+                            <div class="form-card col-4">
+                                <label class="form-card-title" for="km">Km che vuoi percorrere</label>
+                                <input class="card-input" type="text" name="km" id="km">
+                            </div>
+                            <div class="form-card col-4">
+                                <label class="form-card-title" for="age">Fascia d'età</label>
+                                <select class="card-input" name="age" id="age">
+                                    <option value="0">0-17</option>
+                                    <option value="1">18-64</option>
+                                    <option value="2">65+</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="form-btn">
                         <button class="btn btn-clc">Genera</button>
                         <button class="btn">Annulla</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECAP -->
+
+        <section class="user-data-recap">
+            <div class="container">
+                <h1 class="section-title">Il tuo Biglietto</h1>
+                <div class="user-ticket">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3 recap-card  recap-user-name">
+                                <div class="recap-card-title ">
+                                    <h5>
+                                        Nome Passegero
+                                    </h5>
+                                </div>
+                                <div id="user-name" class="recap-card-body">
+                                    Nome & Cognome
+                                </div>
+                            </div>
+                            <div class="col-9 recap-user-data">
+                                <div class="recap-card">
+                                    <div class="recap-card-title">
+                                        Km selezionati
+                                    </div>
+                                    <div class="recap-card-body" id="user-km">
+                                        Km
+                                    </div>
+                                </div>
+                                <div class="recap-card">
+                                    <div class="recap-card-title">
+                                        Sconto applicato
+                                    </div>
+                                    <div class="recap-card-body" id="user-discount">
+                                        Sconto
+                                    </div>
+                                </div>
+                                <div class="recap-card">
+                                    <div class="recap-card-title">
+                                        Prezzo finale
+                                    </div>
+                                    <div class="recap-card-body" id="user-final-price">
+                                        Prezzo
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,34 @@
     box-sizing: border-box;
 }
 
+/* UTILITY */
+.d-flex{
+    display: flex;
+}
 
+.flex-grow{
+    flex-grow: 1;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+}
+
+.col-3{
+    flex-basis: calc(100% / 4);
+}
+
+.col-4{
+    flex-basis: calc(100% / 3);
+}
+
+.col-9{
+    flex-basis: calc((100% / 12) * 9 );
+}
 
 /* PALETTE */
 :root{
@@ -17,6 +44,7 @@
 .app{
     margin: 0 auto;
     background-color: var(--dark-red);
+    height: 100vh;
 }
 
 .section-title{
@@ -41,14 +69,13 @@
     border-radius: 10px;
 }
 
-.card-container{
-    display: flex;
-    justify-content: center;
+.container-sm{
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .form-card{
     margin: 20px;
-    flex-basis: calc(100% / 4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,4 +120,46 @@ select
 input{
     border: 1px solid var(--dark-red);
     border-radius: 2px;
+}
+
+
+/* RECAP */
+
+.user-ticket{
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(91, 90, 90);
+    
+
+}
+
+.recap-user-name{
+    background-color: grey;
+    color: black;
+}
+
+.recap-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    padding: 16px;
+}
+
+.recap-card-title{
+    margin-bottom: auto;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.recap-user-name .recap-card-title{
+    font-size: 20px;
+}
+
+.recap-user-data{
+    display: flex;
+    justify-content: space-around;
+}
+
+.recap-user-data .recap-card-title{
+    font-size: 14px;
 }

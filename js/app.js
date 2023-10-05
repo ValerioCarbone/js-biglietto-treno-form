@@ -17,6 +17,10 @@
 //      - Inizializzare una variabile che sarà la moltiplicazione dei km che l'utente vuole  percorrere per il costo per km
         let ticketPrice = userKm * 0.21;
 
+//  - Inizializzare  una variabile con il nome e cognome dell'utente
+        const userName = document.getElementById('name-surname')
+        console.log(userName)
+
 //      - Applicare, se dovuto, lo sconto
 //      - Formattare il prezzo finale in una cifra con max 2 decimali              
 //      - Stampare in console il risultato quando l'utente cliccherà il bottone
