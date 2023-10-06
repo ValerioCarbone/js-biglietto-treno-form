@@ -94,8 +94,8 @@ btn.addEventListener('click', function () {
     let numeroCarrozzaDOMElement = document.getElementById('numero-carrozza')
     numeroCarrozzaDOMElement.innerHTML = parseInt(getRandomArbitrary(0,10))
 
-    let numeroBigliettoDOMElement = document.getElementById('numero-biglietto')
-    numeroBigliettoDOMElement.innerHTML = parseInt(getRandomArbitrary(1, 999))
+    let numeroBigliettoDOMElement = document.getElementById('numero-posto')
+    numeroBigliettoDOMElement.innerHTML = parseInt(getRandomArbitrary(1, 99))
 }
 )
 
