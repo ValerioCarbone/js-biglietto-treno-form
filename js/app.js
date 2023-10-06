@@ -89,7 +89,7 @@ btn.addEventListener('click', function () {
         recapFinalPriceDOMElement.innerHTML = ticketPrice.toFixed(2)
     }
 
-    // Creare numero randomico carroza e biglietto
+    // Creare numero randomico carrozza e biglietto
 
     let numeroCarrozzaDOMElement = document.getElementById('numero-carrozza')
     numeroCarrozzaDOMElement.innerHTML = parseInt(getRandomArbitrary(0,10))
