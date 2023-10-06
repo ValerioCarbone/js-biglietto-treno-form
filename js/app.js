@@ -68,9 +68,9 @@ btn.addEventListener('click', function () {
         //      - Inizializzare una variabile richiamando l'elemento html corrispettivo
         //      - Modificare l'elemento html con i km selezionati
         let userOfferDOMElement = document.getElementById('user-offer')
-        if (recapDiscount = discountU18) {
+        if (recapDiscount === discountU18) {
             userOfferDOMElement.innerHTML = ('Sconto under 18')
-        } else if (recapDiscount = discountO65) {
+        } else if (recapDiscount === discountO65) {
             userOfferDOMElement.innerHTML = ('Sconto over 65')
         }
         else {
