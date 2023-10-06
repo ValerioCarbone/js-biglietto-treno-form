@@ -6,16 +6,14 @@ btn.addEventListener('click', function () {
     // - Far selezionare all'utente la fascia di età in cui si trova
     //     - Creare un select nell'html dove l'utente selezionerà la sua fascia di età
     //     - Inizializzare una variabile a seconda della scelta dell'utente 
-    let userAge
-    userAge = document.getElementById('age')
+    let userAge = document.getElementById('age')
     userAge = parseInt(userAge.value)
 
     // - Chiedere all'utente il numero di km che vuole percorrere
     //     - Creare un input html dove chiedere all'utente i km che vuole percorrere
     //     - Inizializzare una variabile richiamando l'elemento per id
     //     - Richiamare il value di quest'elemento    
-    let userKm
-    userKm = document.getElementById('km')
+    let userKm = document.getElementById('km')
     userKm = parseFloat(userKm.value)
 
     // - Chiedere all'utente nome e cognome
@@ -37,14 +35,12 @@ btn.addEventListener('click', function () {
     //      - Applicare, se dovuto, lo sconto
     if (userAge === 0) {
         discountU18 = ticketPrice * 0.2
-        console.log('Lo sconto U18 applicato sarà: ' + discountU18)
         ticketPrice = ticketPrice - discountU18
         recapDiscount = discountU18
 
     }
     else if (userAge === 2) {
         discountO65 = ticketPrice * 0.4
-        console.log('Lo sconto O65 applicato sarà: ' + discountO65)
         ticketPrice = ticketPrice - discountO65
         recapDiscount = discountO65
     }
