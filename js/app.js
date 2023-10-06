@@ -38,14 +38,14 @@ btn.addEventListener('click', function () {
     if (userAge === 0) {
         discountU18 = ticketPrice * 0.2
         console.log('Lo sconto U18 applicato sarà: ' + discountU18)
-        ticketPrice = parseFloat(ticketPrice - discountU18)
+        ticketPrice = ticketPrice - discountU18
         recapDiscount = discountU18
 
     }
     else if (userAge === 2) {
         discountO65 = ticketPrice * 0.4
         console.log('Lo sconto O65 applicato sarà: ' + discountO65)
-        ticketPrice = parseFloat(ticketPrice - discountO65)
+        ticketPrice = ticketPrice - discountO65
         recapDiscount = discountO65
     }
 
