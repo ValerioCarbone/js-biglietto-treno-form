@@ -151,6 +151,7 @@ input{
     margin-bottom: auto;
     text-transform: uppercase;
     flex-grow: 1;
+    text-align: center;
 }
 
 .recap-user-name .recap-card-title{
@@ -164,4 +165,14 @@ input{
 
 .recap-user-data .recap-card-title{
     font-size: 14px;
+}
+
+.recap-card-body #numero-carrozza{
+
+color: var(--dark-red);
+margin-right: 6px;
+}
+
+.recap-card-body #numero-biglietto{
+margin-left: 6px;
 }

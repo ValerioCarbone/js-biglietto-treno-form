@@ -67,8 +67,15 @@ btn.addEventListener('click', function () {
 
         //      - Inizializzare una variabile richiamando l'elemento html corrispettivo
         //      - Modificare l'elemento html con i km selezionati
-        let recapKmDOMElement = document.getElementById('user-km')
-        recapKmDOMElement.innerHTML = userKm
+        let userOfferDOMElement = document.getElementById('user-offer')
+        if (recapDiscount = discountU18) {
+            userOfferDOMElement.innerHTML = ('Sconto under 18')
+        } else if (recapDiscount = discountO65) {
+            userOfferDOMElement.innerHTML = ('Sconto over 65')
+        }
+        else {
+            userOfferDOMElement.innerHTML = ('Offerta standard')
+        }
 
         //      - Inizializzare una variabile richiamando l'elemento html corrispettivo
         //      - Modificare l'elemento html con lo sconto applicato
@@ -82,6 +89,17 @@ btn.addEventListener('click', function () {
         recapFinalPriceDOMElement.innerHTML = ticketPrice.toFixed(2)
     }
 
+    // Creare numero randomico carroza e biglietto
+
+    let numeroCarrozzaDOMElement = document.getElementById('numero-carrozza')
+    numeroCarrozzaDOMElement.innerHTML = parseInt(getRandomArbitrary(0,10))
+
+    let numeroBigliettoDOMElement = document.getElementById('numero-biglietto')
+    numeroBigliettoDOMElement.innerHTML = parseInt(getRandomArbitrary(1, 999))
 }
 )
 
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+  
