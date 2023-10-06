@@ -56,14 +56,8 @@ btn.addEventListener('click', function () {
 
     console.log('Questi sono i km che hai selezionato: ' + userKm)
 
-    //      - Formattare il prezzo finale in una cifra con max 2 decimali  
-    ticketPrice = ticketPrice.toFixed(2)
-
-    //      - Stampare in console il risultato quando l'utente cliccherà il bottone
-    console.log(ticketPrice)
-
     //      - Impedire all'utente di ottenere un risultato se non inserisce dati corretti
-    if ((userKm < 0)||(userKm = 'NaN')) {
+    if ((userKm < 0) || (userKm = 'NaN')) {
         userKm = 'Inserire i dati'
         userName = 'Inserire i dati'
         recapDiscount = 'Inserire i dati'
@@ -75,6 +69,13 @@ btn.addEventListener('click', function () {
         recapDiscount = 'Inserire i dati'
         ticketPrice = 'Inserire i dati'
     }
+
+
+    //      - Formattare il prezzo finale in una cifra con max 2 decimali  
+    ticketPrice = ticketPrice.toFixed(2)
+
+    //      - Stampare in console il risultato quando l'utente cliccherà il bottone
+    console.log(ticketPrice)
 
     // - Creare un form dove l'uente inserirà il suo nome, i km che vuole percorrere, l'età
     // - Creare un recap dei dati inseriti
