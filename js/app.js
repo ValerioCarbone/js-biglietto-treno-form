@@ -63,19 +63,13 @@ btn.addEventListener('click', function () {
     console.log(ticketPrice)
 
     //      - Impedire all'utente di ottenere un risultato se non inserisce dati corretti
-    if (userKm < 0) {
+    if ((userKm < 0)||(userKm = 'NaN')) {
         userKm = 'Inserire i dati'
         userName = 'Inserire i dati'
         recapDiscount = 'Inserire i dati'
         ticketPrice = 'Inserire i dati'
     }
     else if (userName = '') {
-        userKm = 'Inserire i dati'
-        userName = 'Inserire i dati'
-        recapDiscount = 'Inserire i dati'
-        ticketPrice = 'Inserire i dati'
-    }
-    else if (userKm = 'NaN') {
         userKm = 'Inserire i dati'
         userName = 'Inserire i dati'
         recapDiscount = 'Inserire i dati'
