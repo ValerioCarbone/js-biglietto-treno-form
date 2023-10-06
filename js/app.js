@@ -17,7 +17,6 @@ btn.addEventListener('click', function () {
     let userKm
     userKm = document.getElementById('km')
     userKm = parseFloat(userKm.value)
-    console.log(userKm, typeof userKm)
 
     // - Chiedere all'utente nome e cognome
     //      - Inizializzare  una variabile con il nome e cognome dell'utente
@@ -49,10 +48,6 @@ btn.addEventListener('click', function () {
         ticketPrice = parseFloat(ticketPrice - discountO65)
         recapDiscount = discountO65
     }
-
-    console.log('Questo è lo sconto: ' + recapDiscount)
-
-    console.log('Questi sono i km che hai selezionato: ' + userKm)
 
     //      - Impedire all'utente di ottenere un risultato se non inserisce dati corretti
 
